@@ -3,7 +3,7 @@ import { IsInt, IsNotEmpty, IsNumber, IsString } from "class-validator";
 export class CreateCordinatesDTO{
     @IsNumber()
     @IsNotEmpty()
-    lng: number;
+    long: number;
     
     @IsNumber()
     @IsNotEmpty()

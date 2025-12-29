@@ -4,7 +4,7 @@ import { HydratedDocument } from "mongoose";
 export type RiderCoordinateDocument = HydratedDocument<RiderCoordinate>;
 
 @Schema()
-class RiderCoordinate{
+export class RiderCoordinate{
     @Prop({required:true })
     lat: number;
 
