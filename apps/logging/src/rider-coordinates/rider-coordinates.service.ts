@@ -31,7 +31,7 @@ export class RiderCoordinatesService {
         // firstValueFrom(observable) converts an Observable 
         // into a Promise that resolves with the FIRST emitted value.
         // MEANS: Wait for the first response, then stop listening.
-        const rider = firstValueFrom(this.client.send(pattern, payload));
+        const rider = await firstValueFrom(this.client.send(pattern, payload));
 
         return {coordinates, rider};
     }
